@@ -1,0 +1,79 @@
+<div class="data-form">
+    <form action="/events/create" method="POST">
+      <br><br>
+      <h2 class = "newHead">Create a new event:</h2>
+      <label for="inputTitle">Title</label>
+      <input
+        type="text"
+        name="title"
+        id="inputTitle"
+        placeholder="Title"
+        autofocus
+        required
+      />
+      <label for="inputDescription">Description</label>
+      <input
+        type="text"
+        name="description"
+        id="inputDescription"
+        placeholder="Description"
+        required
+      />
+      <label for="inputLocation">Location</label>
+      <input
+        type="text"
+        name="location"
+        id="inputLocation"
+        placeholder="Location"
+        required
+      />
+      <label for="inputStartDate">StartDate</label>
+      <input
+        type="date"
+        name="startDate"
+        id="inputStartDate"
+        placeholder="StartDate"
+        required
+      />
+      <label for="inputEndDate">EndDate</label>
+      <input
+        type="date"
+        name="endDate"
+        id="inputEndDate"
+        placeholder="EndDate"
+        required
+      />
+      <label for="inputIsOnline">IsOnline</label>
+      <input
+        type="boolean"
+        name="isOnline"
+        id="inputIsOnline"
+        placeholder="isOnline"
+      />
+      <label for="inputRegistrationLink">RegistrationLink</label>
+      <input
+        type="text"
+        name="registrationLink"
+        id="inputRegistrationLink"
+        placeholder="registrationLink"
+      />
+      <label for="inputOrganizer">Organizer</label>
+      <input
+        type="text"
+        name="organizer"
+        id="inputOrganizer"
+        placeholder="organizer(enter name)"
+        required
+      />
+      <label for="inputAttendees">attendees</label>
+      <input
+        type="text"
+        name="attendees"
+        id="inputAttendees"
+        placeholder="attendees(enter name)"
+      />
+      <button type="submit">Create Event</button>
+    </form>
+  </div>
+
+

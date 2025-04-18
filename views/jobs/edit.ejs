@@ -1,0 +1,106 @@
+<div class="data-form">
+    <br><br>
+    <form method="POST" action="<%=`/jobs/${job._id}/update?_method=PUT`%>">
+        <h2>Edit Job:</h2>
+        <label for="inputTitle">Title</label>
+      <input
+        type="text"
+        name="title"
+        id="inputTitle"
+        value="<%= job.title %>"
+        placeholder="Title"
+        autofocus
+      />
+      <label for="inputCompany">Company</label>
+      <input
+        type="text"
+        name="company"
+        id="inputCompany"
+        value="<%= job.company %>"
+        placeholder="Company"
+        required
+      />
+      <label for="inputLocation">Location</label>
+      <input
+        type="text"
+        name="location"
+        id="inputLocation"
+        value="<%= job.location %>"
+        placeholder="Location"
+        required
+      />
+      <label for="inputDescription">Description</label>
+      <input
+        type="text"
+        name="description"
+        id="inputdescription"
+        value="<%= job.description %>"
+        placeholder="description"
+        required
+      />
+      <label for="inputRequirement">Requirement</label>
+      <input
+        type="text"
+        name="requirement"
+        id="inputRequirement"
+        value="<%= job.requirement %>"
+        placeholder="requirement"
+        required
+      />
+      <label for="inputSalary">Salary</label>
+      <input
+        type="number"
+        name="salary"
+        id="inputSalary"
+        value="<%= job.salary %>"
+        placeholder="Salary"
+        required
+      />
+      <label for="inputContactEmail">ContactEmail</label>
+      <input
+        type="text"
+        name="contactEmail"
+        id="inputContactEmail"
+        value="<%= job.contactEmail %>"
+        placeholder="contactEmail"
+        required
+      />
+      <label for="inputContactPhone">ContactPhone</label>
+      <input
+        type="text"
+        name="contactPhone"
+        id="inputContactPhone"
+        value="<%= job.contactPhone %>"
+        placeholder="ContactPhone"
+      />
+      <label for="inputPostDate">PostDate</label>
+      <input
+        type="Date"
+        name="postDate"
+        id="inputPostDate"
+        
+        placeholder="PostDate"
+      />
+      <label for="deadlineDate">DeadlineDate</label>
+      <input
+        type="Date"
+        name="deadlineDate"
+        id="inputDeadlineDate"
+        value="<%= job.deadlineDate %>"
+        placeholder="deadlineDate"
+      />
+      <label for="inputIsActive">isActive</label>
+      <input
+        type="Boolean"
+        name="isActive"
+        id="inputIsActive"
+        value="<%= job.isActive %>"
+        placeholder="IsActive"
+      />
+      
+      
+      
+      <button type="submit">Update</button>
+    </form>
+  </div>
+  

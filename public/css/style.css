@@ -1,0 +1,672 @@
+/*set head to the center*/
+header{
+    padding: 30px;
+    align-items:center;
+    display:flex;
+    font-family: Helvetica;
+}
+
+/*maintain distance for header and its left side*/
+h1{
+    margin-left: 5%;
+}
+
+/*set header postion*/
+h2{
+    margin-left: 50px;
+    margin-top:-20px;
+    font-size: 35;
+    color: rgb(30,66,124,255);
+}
+
+/*set header image*/
+header img{
+    width:150px;
+}
+
+/*set navigation size and color*/
+nav{
+    margin-top: 10px;
+    overflow:hidden;
+    background-color: rgb(30,66,124,255); ;
+}
+
+/*set navigation style when clikcing on it*/
+nav a {
+    float:left;
+    display:block;
+    color:rgba(255, 251, 247, 0.878);
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration:none;
+    font-size: larger;
+}
+
+/*set hover style*/
+nav a:hover{
+    background-color: rgba(220, 90, 42, 0.878);
+}
+
+/*set title postition*/ 
+.titles{
+    margin-left: 13%;
+    margin-top: 7%;
+    padding-bottom: 60;
+    font-size: larger;
+}
+
+/*set font style*/ 
+.home{
+    font-size:30;
+    font-family: Helvetica;
+}
+
+/*set image size */ 
+.home img{
+    height: 600px;
+    width: 800px;
+   
+}
+
+
+/*set font style*/ 
+#catch{
+    font: bold;
+    margin-bottom: 1%;
+    color:rgb(30,66,124,255); 
+}
+
+/*set font style*/
+.homeContent{
+    padding-left: 30;
+    padding-right: 30;
+    background-color: rgb(30,66,124,255); 
+    color:white;
+    text-align: center;
+    font-size: larger;
+}
+
+/*set font style*/
+#people{
+    font:bold;
+    color:white;
+    margin-bottom: 4%;
+}
+
+/*set font style*/
+.quote{
+    color:red;
+    text-align: center;
+    color:white;
+    background-color: rgb(30,66,124,255); 
+    font-size: 25;
+    padding-left: 30;
+    padding-right: 30;
+    padding-top: 30;
+    padding-bottom: 30;
+    margin-top: 30;
+    margin-bottom: 30;
+}
+
+/*set font size*/
+.name{
+    font-size: 15;
+}
+
+/*set font style*/
+#about{
+    font-size: 20;
+    font-family: Helvetica;
+    padding-left: 70;
+    padding-right:70;
+    padding-top:15;
+    padding-bottom:15;
+   
+}
+/*set image style*/
+#about img{
+    padding-top:40;
+    place-items: center;
+}
+
+/*set font style*/
+#ctitle{
+    font-size:35;
+    font:bold;
+    padding-bottom: 30;
+    color:rgb(30,66,124,255); 
+}
+
+/*set image style*/
+.main{
+    max-width: 43%;
+}
+
+/*set image style*/
+.proud{
+    font-size:30;
+}
+
+/*maintain space*/
+.sub{
+    font-size: 18;
+    margin-top: -20;
+}
+
+/*set font color*/
+.proud,.sub{
+    color: rgb(30,66,124,255); ;
+}
+
+/*set font style*/
+.sub::after {
+    content: "Brandeis Univeristy";
+    font-size: 22;
+  }
+
+  /*set font style*/
+footer{
+    background-color: gray;
+    padding: 5px;
+    color:aliceblue;
+    display:flex;
+}
+/*set font style*/
+.text{
+    margin-left:6%;
+}
+/*set font style*/
+.fa {
+    color: white;
+    margin-top: 18px;
+    text-decoration: none;
+}
+/*set font style*/
+.text {
+    flex: 1; /* Takes up remaining space on the left */
+  }
+  /*set image style*/
+.media {
+    display: flex;
+    gap: 10px; /* Adjust the gap between social media icons */
+    margin-right:6%;
+}
+
+/*set font space*/
+#events, #jobs, #jobs{
+    font-size: 17;
+    font-family: Helvetica;
+    padding-left:50;
+    padding-right:50;
+}
+
+/*set font space*/
+#eTitle, #jTitle, #sTitle, #career{
+    font-size:30;
+    padding-top:15;
+    padding-bottom:15;
+    color: rgb(30,66,124,255); 
+}
+
+/*set font style*/
+.e1{
+    background-color: rgb(227, 224, 216);
+    padding-left:30;
+    padding-top:10;
+    padding-bottom:10;
+    margin-top: 10;
+    margin-bottom:30;
+}
+
+/*set font position*/
+#location{
+    font-size: 30;
+    font: bold;
+}
+
+/*set font style*/
+#mailing{
+    font-size: 30;
+}
+/*set image*/
+#jobs img{
+    height: 500;
+    width: 900;
+}
+/*set image sytle*/
+#hiatt{
+    position: relative;
+    background-image: url('/images/hiatt.jpg');
+    background-size: cover; /* or other values depending on your preference */
+    color: #f3f2f2; /* Set the text color to make it visible on top of the image */
+    padding-left:100;
+    padding-top:100;
+    padding-right:100;
+    padding-bottom:200;
+    font-size:30;
+}
+/*set image sytle*/
+#arts{
+    position: relative;
+    background-image: url('/images/science.jpg');
+    background-size: cover; /* or other values depending on your preference */
+    color: #fefefe; /* Set the text color to make it visible on top of the image */
+    padding-left:50;
+    padding-top:100;
+    padding-right:50;
+    padding-bottom:200;
+    font-size:30;
+}
+/*set image sytle*/
+#bussiness{
+    position: relative;
+    background-image: url('/images/bussiness.jpg');
+    background-size: cover; /* or other values depending on your preference */
+    color: #fffcfc; /* Set the text color to make it visible on top of the image */
+    padding-left:50;
+    padding-top:100;
+    padding-right:50;
+    padding-bottom:200;
+    font-size:30;
+}
+/*set image sytle*/
+#heller{
+    position: relative;
+    background-image: url('/images/heller.jpg');
+    background-size: cover; /* or other values depending on your preference */
+    color: #fffcfc; /* Set the text color to make it visible on top of the image */
+    padding-left:50;
+    padding-top:100;
+    padding-right:50;
+    padding-bottom:200;
+    font-size:30;
+}
+/*set space*/
+* {
+    box-sizing: border-box;
+  }
+
+  table td,
+th {
+  padding: 20px;
+}
+
+#myModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Style the close button */
+.modal-footer button {
+  background-color: #ccc;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Close button hover effect */
+.modal-footer button:hover {
+  background-color: #dddddd;
+}
+
+
+/*add style to event modal"*/
+
+#myModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.join-button, .joined-button {
+    /* Your existing button styles go here */
+    margin-top: 10px;
+    width: auto;
+    margin-left: 1000px;
+
+}
+  
+  /* Style the close button */
+  .modal-footer button {
+    background-color: #adadad;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 1150px;
+    margin-top:30px;
+    margin-bottom: -5px;
+  }
+  
+  /* Close button hover effect */
+  .modal-footer button:hover {
+    background-color: #0056b3;
+  }
+
+  /* set background color */
+  .current-user {
+    background-color: bisque;
+  }
+  
+    /* set background color */
+  .other-user {
+    background-color: azure;
+  }
+
+  /*remove bullet point on navigation*/
+  nav li {
+    list-style: none;
+    margin-top:5px;
+    margin-bottom:5px;
+  }
+
+    /* set style for title */
+  .event-description, .event-title {
+    padding-right: 500;
+  }
+
+  /*set font style*/
+  .event-title{
+    font-size: 20px;
+    color: rgb(30,66,124,255);
+  }
+
+  /*set font style*/
+  .event-description{
+    padding-top:15px;
+    padding-bottom:15px;
+    font-size:15px;
+    padding-left:30px
+  }
+
+  /*set chat input position*/
+  .container {
+    position: relative;
+  top: 50%;
+  left: 50%;
+  bottom: 50%;
+  padding-bottom:50%;
+  transform: translate(-50%, -5%);
+
+  
+  
+  }
+
+    /*set chat input position*/
+  .container {
+    background-color: #efeded;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(16, 0, 165, 0.1);
+    width: 400px; /* Set your desired width */
+    text-align: center;
+  }
+
+    /*set chat input position*/
+  #chatForm {
+    margin-top: 10px;
+  }
+
+    /*set chat input position*/
+  #chat-input {
+    width: 70%;
+    padding: 8px;
+    margin-right: 5px;
+  }
+
+    /*set chat input position*/
+  #chat-user-name,
+  #chat-user-id {
+    display: none; /* Hidden user details inputs */
+  }
+
+    /*set chat input position*/
+  input[type="submit"] {
+    padding: 8px 15px;
+    background-color: rgb(30,66,124,255);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+    /*set chat input position*/
+  #chat {
+    margin-top: 20px;
+    overflow-y: auto;
+    max-height: 300px; /* Adjust the maximum height as needed */
+  }
+  
+    /*set table format*/
+  .table h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+      /*set table format*/
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+      /*set table format*/
+  .table th, .table td {
+    border: 1px solid rgb(220, 218, 218);
+    padding: 8px;
+    text-align: center;
+
+  }
+
+      /*set table format*/
+  .table th {
+    background-color: #f2f2f2;
+  }
+
+      /*set table format*/
+  .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+      /*set table format*/
+  .links a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 4px;
+  }
+
+      /*set table format*/
+  .links a:hover {
+    background-color: #0056b3;
+  }
+  
+  /*for new user page*/
+  .data-form body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  /*for new user page*/
+  .data-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  /*for new user page*/
+  .newHead {
+    color: #333;
+    font-size: 30px;
+  }
+
+  /*for new user page*/
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*for new user page*/
+  label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  /*for new user page*/
+  input {
+    width: 30%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  /*for new user page*/
+  button {
+    width: 30%;
+    padding: 10px;
+    background-color: #0757ac;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  /*for new user page*/
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  /*style for login and logout*/
+  .nowUser {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  /*for login and logout button*/
+  .nowLogOut,
+  .nowLogIn {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+    /*for login and logout button*/
+  .nowLogOut:hover,
+  .nowLogIn:hover {
+    background-color: #0056b3;
+  }
+
+    /*for login and logout button*/
+  .nowLogOut {
+    margin-left: 10px;
+  }
+
+  /*styles for flash message*/
+  .flashes {
+    width: 100%;
+    text-align: center;
+  }
+  
+    /*styles for flash message*/
+  .flash {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    width: 30%;
+    margin: 0 auto;
+    z-index: 1000;
+  }
+  
+    /*styles for flash message*/
+  .success {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+    /*styles for flash message*/
+  .error {
+    background-color: #ff5733;
+    color: #fff;
+  }
+
+    /*styles for flash message*/
+  .createEvent {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left:20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff; /* Blue background color */
+    border-radius: 4px;
+  }
+  
+    /*styles for flash message*/
+  .createEvent:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+
+  
+
+
+
+
+
+

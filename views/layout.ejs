@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet", href='/css/style.css'>
+        <title>Brandeis Universtiy Stdent & Alumni Association</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header class = "school">
+            <div class = "logo">
+                <img src = "/images/BrandeisLogo.png" alt = "Brandeis Logo"/></a>
+            </div>
+            <div class = "title">
+                <h1>Brandeis University</h1>
+                <h2>Student & Alumni Association</h2>
+            </div>
+        </header>
+
+        <nav>
+            <a class = "1" href = "/home">Home</a>
+            <a href = "/about">About</a>
+            <a href = "/jobs">Jobs</a>
+            <a href = "/events">Events</a>
+            <a href = "/contact">Contact</a>
+            <a href="/chat" class="chat-icon">Chat</a>
+            <li><%- include('events/_eventsModal') %></li>
+        </nav>
+        
+        <% if (loggedIn) { %> Logged in as
+            <a class = "nowUser" href="<%=`/users/${currentUser._id}`%>"><%= currentUser.name %></a>
+            <div
+            id="apiToken"
+            data-token="<%= currentUser.apiToken %>"
+            style="display: none"
+          ></div>
+            <a class = "nowLogOut" href="/users/logout"><br>Log out</a>
+      
+            <%} else {%>
+            <a class = "nowLogIn" href="/users/login">Log In</a>
+            <% } %>
+
+            <div class="flashes">
+                <% if (flashMessages) { %>
+                <% if (flashMessages.success) { %>
+                <div class="flash success"><%= flashMessages.success %></div>
+                <% } else if (flashMessages.error) { %>
+                <div class="flash error"><%= flashMessages.error %></div>
+                <% } %> <% } %>
+                </div>
+
+
+
+          
+        <section>
+            <%- body%>
+        </section>
+
+        <footer>
+            <p class = "text">© 2023 Brandeis Univeristy</p>
+            <div class = "media">
+                <a href="https://www.facebook.com/brandeisuniversity/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/brandeisuniversity/?hl=en" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/school/brandeis-university/" class="fa fa-linkedin"></a>
+                <a href="https://www.youtube.com/BRANDEISUNIVERSITY" class="fa fa-youtube"></a>
+                <a href="https://twitter.com/BrandeisU?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="/js/alumniApp.js"></script>
+    </body>
+</html>

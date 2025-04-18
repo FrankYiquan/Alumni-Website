@@ -1,0 +1,48 @@
+
+<h1>Event Data for <%= event.title %></h1>
+<table class="table">
+  <tr>
+    <th>Title</th>
+    <td><%= event.title %></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td><%= event.description %></td>
+  </tr>
+  <tr>
+    <th>Location</th>
+    <td><%= event.location %></td>
+  </tr>
+  <tr>
+    <th>StartDate</th>
+    <td><%= event.startDate %></td>
+  </tr>
+  <tr>
+    <th>InputIsOnline</th>
+    <td><%= event.inputIsOnline %></td>
+  </tr>
+  <tr>
+    <th>RegistrationLink</th>
+    <td><%= event.registrationLink %></td>
+  </tr>
+  <tr>
+    <th>Organizer</th>
+    <td><%= event.organizer %></td>
+  </tr>
+  <tr>
+    <th>Attendees</th>
+    <td><%= event.attendees %></td>
+  </tr>
+</table>
+<div>
+  <a href="/events">View all Event</a>
+</div>
+<div>
+  <a href="<%=`/events/${event._id}/edit`%>">Edit Event Details</a>
+</div>
+<div>
+  <a
+    href="<%= `/events/${event._id}/delete?_method=DELETE` %>"
+    onclick="return confirm('Are you sure you want to delete this record?')"
+    >Delete</a
+  >

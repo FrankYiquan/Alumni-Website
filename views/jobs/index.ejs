@@ -1,0 +1,55 @@
+<br><br>
+<h2>Jobs Table</h2>
+<hr>
+<link rel = "stylesheet", href='/css/style.css'>
+<a class = "createEvent"href="<%=`/jobs/new` %>">Create a New Job</a>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Company</th>
+      <th>Location</th>
+      <th>Description</th>
+      <th>Requirement</th>
+      <th>Salary</th>
+      <th>Contact Email</th>
+      <th>Contact Phone</th>
+      <th>Post Date</th>
+      <th>Deadline Date</th>
+      <th>isActive</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <% jobs.forEach(job => { %>
+    <tr>
+      <td>
+        <a href="<%= `/jobs/${job._id}` %>"> <%= job.title %> </a>
+      </td>
+
+      <td><%= job.company %></td>
+      <td><%= job.location %></td>
+      <td><%= job.description %></td>
+      <td><%= job.requirement %></td>
+      <td><%= job.salary %></td>
+      <td><%= job.contactEmail %></td>
+      <td><%= job.contactPhone %></td>
+      <td><%= job.postDate %></td>
+      <td><%= job.deadlineDate %></td>
+      <td><%= job.isActive %></td>
+
+      <td>
+        <a href="<%=`/jobs/${job._id}/edit` %>"> Edit </a>
+      </td>
+      <td>
+        <a
+          href="<%= `jobs/${job._id}/delete?_method=DELETE` %>"
+          onclick="return confirm('Are you sure you want to delete this record?')"
+          >Delete</a
+        >
+      </td>
+    </tr>
+    <% }); %>
+  </tbody>
+</table>
