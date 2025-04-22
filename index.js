@@ -20,11 +20,7 @@ const dbURI = process.env.NODE_ENV === "production"
 ? process.env.MONGO_URI
 : "mongodb+srv://yiquanzhang:good656NOEL!@alumniwebsitedatabase.vn8fwwq.mongodb.net/?retryWrites=true&w=majority&appName=alumniwebsitedatabase";
 
-mongoose.connect(dbURI, {
-useNewUrlParser: true,
-useUnifiedTopology: true,
-});
-
+mongoose.connect(dbURI);
 const db = mongoose.connection;
 
 db.once("open", () => {
