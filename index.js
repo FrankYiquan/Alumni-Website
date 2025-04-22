@@ -12,12 +12,13 @@ const router = require("./routes/index");
 const express = require("express");
 const app = express();
 
+require('dotenv').config();
 
 
-// Check if we're in production or development
-const dbURI = process.env.NODE_ENV === "production" 
-? process.env.MONGO_URI // Use the MongoDB URI from environment variable (production)
-: "mongodb://localhost:27017/Brandeis_SAA"; // Local development DB
+/// Choose the correct database URI based on the environment
+const dbURI = process.env.NODE_ENV === "production"
+? process.env.MONGO_URI
+: "mongodb+srv://yiquanzhang:good656NOEL!@alumniwebsitedatabase.vn8fwwq.mongodb.net/?retryWrites=true&w=majority&appName=alumniwebsitedatabase";
 
 mongoose.connect(dbURI, {
 useNewUrlParser: true,
@@ -27,12 +28,13 @@ useUnifiedTopology: true,
 const db = mongoose.connection;
 
 db.once("open", () => {
-console.log("Connected to the database!");
+console.log("✅ Connected to the database!");
 });
 
 db.on("error", (err) => {
-console.error("Database connection error:", err);
+console.error("❌ Database connection error:", err);
 });
+
 // set up express app
 app.set("port", process.env.PORT || 8080);
 app.set("view engine", "ejs");
